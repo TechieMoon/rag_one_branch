@@ -1,0 +1,23 @@
+[project]
+name = "rag-one-branch"
+version = "0.1.0"
+description = "RAG 비법노트 기본편 내용을 활용한 프로젝트 실습"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv",
+    "langchain",
+    "langchain-community",
+    "langchain-openai",
+    "langchain-text-splitters",
+    "faiss-cpu",
+    "pypdf",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel",
+]
+
+[tool.uv]
+package = false
